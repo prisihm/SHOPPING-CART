@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang ="en">
+<head>
+<title>PRODUCTS</title>
+</head>
+<style>
+body{
+background-image: url(./IMAGES/PIC\ 7/photo.jpg);
+height:100%;
+background-repeat:no-repeat;
+background-size:cover;
+}
+
+.topnav{
+    background-color: black;
+    overflow: hidden;
+}
+.topnav a{
+    float:right;
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
+
+}
+.topnav a:hover{
+    background-color: #ddd;
+    color: white;
+}
+.topnav a.active{
+    background-color: rgb(144, 144, 226);
+    color: white;
+}
+h1{
+text-align:center;}
+</style>
+
+
+<body class="cart">
+    <?php
+          session_start();
+
+                  include("connection.php");
+                  include("function.php");
+
+                  echo "$user_data['$user_name']";
+  ?>
+    <section>
+        <header>
+            <nav>
+                <div class="topnav">
+                    <a class="active" href="products.html">HOME</a>
+                    <a href="signup.html">LOG OUT</a>
+                </div>
+            </nav>
+        </header>
+    </section>
+<h1><u>SHOPPING CART</u></h1>
+<div class="card">
+<img src="./IMAGES/PIC 5/IMAGE.webp"style="width: 600px; height:600px;">
+<h1>Hoodies</h1>
+<p class="price"><b>ksh.1,500</b></p>
+<p><b>Unisex long sleeved hoodies.</b></p>
+<p><button>Add to Cart</button></p>
+</div>
+
+<div class="card">
+<img src="./IMAGES/PIC 4/image.jpg">
+<h1>Pink Jordans</h1>
+<p class="price"><b>ksh.2,500</b></p>
+<p><b>Cormfotable all-weather shoes</b></p>
+<p><button>Add to Cart</button></p>
+</div>
+
+
+<center><p><button><b>Remove from Cart</b></button></p></center>
+<center><p><b>Quantity:</p></b>
+<input type="text" name="Quantity">
+<input type="submit"></center><br>
+<center><p><b>Total Cost:</p></b>
+<input type="text" name="Total Cost">
+<input type="submit"></center>
+<h1><button><b>Checkout</b></button></h1>
+</body>
+</html>

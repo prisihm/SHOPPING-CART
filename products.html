@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html lang ="en">
+<head>
+<title>PRODUCTS</title>
+<link rel="icon" type="image/x-icon"href="https://image.shutterstock.com/image-vector/favorite-star-icon-260nw-387841594.jpg ">
+</head>
+<style>
+body{
+background-image:url(./IMAGES/PIC\ 7/photo.jpg );
+height:100%;
+background-repeat:no-repeat;
+background-size:cover;
+}
+
+
+h2{ 
+text-align:center;
+color: grey;
+font-family: cooper black;
+font-size: 500%;
+}
+h1{
+text-align:center;
+color: black;
+font-family: cooper black;
+font-size: 300%;
+}
+p{
+font-family: cooper black;
+font-size: 200%;
+
+}
+
+
+
+.topnav{
+    background-color: black;
+    overflow: hidden;
+}
+.topnav a{
+    float:right;
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
+
+}
+.topnav a:hover{
+    background-color: #ddd;
+    color: white;
+}
+.topnav a.active{
+    background-color: rgb(144, 144, 226);
+    color: white;
+}
+
+</style>
+
+
+    <body class="product">
+        <?php
+              session_start();
+
+                      include("connection.php");
+                      include("function.php");
+
+                      echo "$user_data['$user_name']";
+      ?>
+
+  <section>
+    <header>
+        <nav>
+            <div class="topnav">
+                <a class="active" href="home.html">HOME</a>
+                <a href="signup.html">LOG OUT</a>
+                <a href="cart.html">CART</a>
+            </div>
+        </nav>
+    </header>
+</section>
+
+<h2><i>AFFORDABLE PRODUCTS ZONE!!</i></h2><br>
+
+<center><div class="card">
+<img src="./IMAGES/PIC 5/IMAGE.webp" style="width: 600px; height:600px;">
+<h1>Hoodies</h1>
+<p class="price"><b>ksh.1,500</b></p>
+<p><b>Unisex long sleeved hoodies.</b></p>
+<p><b><button>Add to Cart</b></button></p>
+</div></center>
+ 
+
+<center><div class="card">
+<img src="./IMAGES/PIC 3/image.webp" >
+<h1>Electronics</h1>
+<p class="price"><b>ksh.19,000</b></p>
+<p><b>Affordable electronics with ample storage and of high quality</b></p>
+<p><b><button>Add to Cart</b></button></p>
+</div></center>
+
+<center><div class="card">
+<img src="./IMAGES/PIC 4/image.jpg">
+<h1>Pink Jordans</h1>
+<p class="price"><b>ksh.2,500</b></p>
+<p><b>Cormfotable all-weather shoes</b></p>
+<p><b><button>Add to Cart</b></button></p>
+</div></center>
+
+<center><div class="card">
+<img src="./IMAGES/PIC 6/photo.jpg" >
+<h1>Skincare Products</h1>
+<p class="price"><b>ksh.5,000</b></p>
+<p><b>Acne and dark spots corrector</b></p>
+<p><b><button>Add to Cart</b></button></p>
+</div></center>
+
+
+ 
+
+
+</body>
+<footer>
+<center><img src="./IMAGES/PIC 1/download.png"></center></footer>
